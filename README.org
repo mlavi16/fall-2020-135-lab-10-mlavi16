@@ -37,7 +37,7 @@ You must:
 
 Traditionally, you'll create one class specification per ~.h~ file so
 for this lab you should have ~time.h~,  ~movie.h~ and ~timeslot.h~. or
-something similar. The enum should be declared int the file with Movie
+something similar. The enum should be declared in the file with Movie
 and that ~.h~ should be included in any file that uses either Movie or
 the enum. 
 
@@ -51,7 +51,7 @@ There should be no user input.
 
 ** Task C
 
-the *printTimeSlot* function should be renamed *getTimeSlot* and it
+The *printTimeSlot* function should be renamed *getTimeSlot* and it
 should return a std::string. Run from main and test via doctests. 
 
 ** Task D and E
