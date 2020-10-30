@@ -1,0 +1,60 @@
+* Fall 2020 - Lab 10
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Notes:
+
+
+  
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+- The main lab description can be found here:
+  https://maryash.github.io/135/labs/lab_10.html 
+
+* specific instructions and requirementsfor lab 10
+
+This and future labs will start with a mostly empty repository. 
+
+You must:
+
+1. Use ~doctest.h~ based tests to test your solutions unless a
+   specific task says otherwise.
+2. Have a ~Makefile~ with at least the following targets: 
+   1. ~main~ to build *main* which will run your project
+   2. ~tests~ to build *tests* which will run the doctest based tests
+   3. ~clean~ which will remove *.o* files
+3. At least three  ~.cpp~ files - ~main.cpp~, ~tests.cpp~ and at least
+   one more with solutions to the labs. You will also need the
+   appropriate ~.h~ files.
+
+
+* Notes
+
+Traditionally, you'll create one class specification per ~.h~ file so
+for this lab you should have ~time.h~,  ~movie.h~ and ~timeslot.h~. or
+something similar. The enum should be declared int the file with Movie
+and that ~.h~ should be included in any file that uses either Movie or
+the enum. 
+
+* Task Specific instructions
+** Tasks A and B 
+
+Write these functions in a ~.cpp~ file, run from ~main~ and test
+through ~tests~ via doctests.
+
+There should be no user input. 
+
+** Task C
+
+the *printTimeSlot* function should be renamed *getTimeSlot* and it
+should return a std::string. Run from main and test via doctests. 
+
+** Task D and E
+
+Write and test these as per usual - that is, no user input, run from
+main, test via  doctest. 
