@@ -15,7 +15,6 @@ time.o: time.cpp ${HFILES}
 
 clean:
 	rm -f main.o tests.o ${OBJECTS}
-	rm -f main tests
 
 help:
 	@echo  make main : make executable named main
