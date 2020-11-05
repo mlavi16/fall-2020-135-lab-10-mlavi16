@@ -1,5 +1,5 @@
 OBJECTS	= time.o
-HFILES = time.h
+HFILES = time.h movie.h timeslot.h
 
 main: main.o ${OBJECTS}
 	g++ -o main main.o ${OBJECTS}
@@ -11,7 +11,7 @@ main.o: main.cpp ${HFILES}
 
 tests.o: tests.cpp doctest.h ${HFILES}
 
-time.o: time.cpp time.h
+time.o: time.cpp ${HFILES}
 
 clean:
 	rm -f main.o tests.o ${OBJECTS}
