@@ -3,10 +3,17 @@
 #include "timeslot.h"
 
 #include <string>
+#include <cmath>
 
 int minutesSinceMidnight(Time time) {
     // Function returns the number of minutes from 0:00 AM until time.
-    return (time.h * 60) + time.m;
+    int minutes = (time.h * 60) + time.m;
+    if (minutes >= (24 * 60)) {
+        while (minutes >= (24 * 60)) {
+            minutes -= (24 * 60);
+        }
+    }
+    return minutes;
 }
 
 int minutesUntil(Time earlier, Time later) {
@@ -23,6 +30,8 @@ Time addMinutes(Time time0, int min) {
     time0_min += min;
     if (time0_min >= (24 * 60)) { // after 23:59 it goes back to 00:00
         time0_min -= (24 * 60);
+    } else if (time0_min < 0) {
+        time0_min += (24 * 60);
     }
     Time new_time = {time0_min / 60, time0_min % 60};
     return new_time;
